@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robson Pereira Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Robson Pereira</div>
+      <div class="nav-container">
+        <ul class="nav-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Robson Pereira</div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Robson Pereira profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi there, I'm</p>
+        <h1 class="title">Robson Pereira</h1>
+        <p class="section__text__p2">Data Analyst</p>
+        <p class="section__text__p3">Toronto, Canada</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-robson.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/robsontadeufilho/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/robcabr', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Find Out More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>Welcome to my Portfolio website! I'm Robson, a Brazilian junior data analyst who's swapped the tropical beachs for the Canadian Winter.</p>
+            <br>
+            <p>My journey started in the legal field, where I worked mostly with contracts, as well as compliance of companies, what made me develop
+               a detail-oriented mindset, strong communication skills, and the ability to manage complex and sensitive information. 
+               I transitioned into data analysis to merge my analytical skills with my passion for technology.  </p>
+            <br>
+            <p>In my role as a Junior Data Analyst, I focus on transforming raw data into actionable insights. 
+              I design and generate detailed reports in Excel, handle comprehensive data gathering and preprocessing, and create interactive visualizations using Python libraries like Matplotlib, Seaborn, and Plotly. SQL is also a key tool in my toolkit, helping me efficiently extract, manipulate, and manage data to support robust analysis.</p>
+            <br>
+            <p>Thank you for visiting my Portfolio. Feel free to explore my work, and don't hesitate to reach out if you're intersted in know how I can contribute to your data-driven initiatives or company!</p>
+          </div>
+        </div>
+      </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/rating_17053783.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Junior Data Analyst</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/graduated_7943054.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. in Law</p>
+            </div>
+          </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Analysis and Visualization</h2>
+          <div class="article-container">
+            <article class="experience-item">
+              <img src="./assets/database-solid.svg" alt="SQL icon" class="icon"/>
+              <div class="experience-content">
+                <h3>SQL</h3>
+                <p>Window Functions</p>
+                <p>CTE</p>
+                <p>Subqueries</p>
+              </div>
+            </article>      
+            <article class="experience-item">
+              <img src="./assets/Power-Query-Colored.png" alt="Power Query icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Power Query</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <!-- Power BI -->
+            <article class="experience-item">
+              <img src="./assets/Icon-Obsolete2020.svg" alt="Power BI icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Power BI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <!-- Tableau -->
+            <article class="experience-item">
+              <img src="./assets/table-solid.svg" alt="Tableau icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Tableau</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <!-- Excel -->
+            <article class="experience-item">
+              <img src="./assets/file-excel-solid.svg" alt="Excel icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Excel</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming and Machine Learning</h2>
+          <div class="article-container">
+            <!-- Machine Learning -->
+            <article class="experience-item">
+              <img src="./assets/code-solid.svg" alt="Machine Learning icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Machine Learning</h3>
+                <p>Scikit-learn</p>
+                <p>TensorFlow</p>
+                <p>Keras</p>
+              </div>
+            </article>
+            <!-- Python -->
+            <article class="experience-item">
+              <img src="./assets/python-brands-solid.svg" alt="Python icon" class="icon"/>
+              <div class="experience-content">
+                <h3>Python</h3>
+                <p>Pandas</p>
+                <p>Numpy</p>
+                <p>Matplotlib</p>
+                <p>Seaborn</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+                src="./assets/project-1.webp"
+                alt="Project 1 - Instacart Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Instacart Analysis</h2>
+            <h3>Python</h3>
+            <br>
+            <p class="project-description" style="color: black;">In this project, I analyzed Instacart's 2017 sales data to uncover customer purchasing patterns and inform marketing strategies. Utilizing Python, I applied data cleaning, wrangling, and visualization techniques with libraries like Pandas and Matplotlib.</p> 
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/robcabr/Instacart_Analysis_Sales', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpg"
+                alt="Project 2 - Boat Sales Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Boat Sales Analysis</h2>
+            <h3>Python</h3>
+            <br>
+            <p class="project-description" style="color: black;">In this project, I analyzed a boat sales dataset to identify factors affecting listing visibility. Using Python, I proceed with an EDA, applied linear regression, as well as k-means and PCA, with libraries like NumPy, Matplotlib, Seaborn and Pandas.</p> 
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/robcabr/Boat-Sales-Analysis', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.webp"
+                alt="Project 3 - Video Rental Analysis"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Rockbuster Analysis</h2>
+            <h3>SQL, Tableau, Excel</h3>
+            <br>
+            <p class="project-description" style="color: black;">In this project, I analyzed Rockbuster's video rental data to inform strategic decisions for a new online platform. Using PostGreSQL, Tableau, and Excel, I employed techniques like querying databases, data visualization, and customer segmentation.</p> 
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/robcabr/Rockbuster-Stealth-Analysis', '_blank')"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/robsontadeufilho/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/robcabr" target="_blank" rel="noopener noreferrer">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Copyright &#169; 2024 Robson Pereira. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
